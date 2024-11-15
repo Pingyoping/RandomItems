@@ -1,0 +1,2 @@
+execute as @a[scores={Punished=1}] if score @e[type=armor_stand, name="TimeKeeper", limit=1] Event matches 5 run spreadplayers ~ ~ 500 2000 false @s
+scoreboard players set @e[type=armor_stand, name="TimeKeeper"] TeleportTimer 0
