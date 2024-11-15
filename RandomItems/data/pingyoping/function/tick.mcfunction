@@ -5,7 +5,7 @@ execute as @e[type=armor_stand, name="TimeKeeper"] run scoreboard players add @s
 execute as @e[type=armor_stand, name="TimeKeeper"] run scoreboard players add @s TeleportTimer 1
 
 # Start the game function when Timer reaches exactly 60 (1-minute mark)
-execute if score @e[type=armor_stand, name="TimeKeeper", limit=1] Timer matches 60 run function pingyoping:game_start
+execute if score @e[type=armor_stand, name="TimeKeeper", limit=1] Timer matches 6000 run function pingyoping:game_start
 
 # Continuously check if players have collected the required item once Timer is above 61
 execute as @e[type=armor_stand, name="TimeKeeper", limit=1] if score @s Timer matches 61.. run function pingyoping:check_item
